@@ -443,4 +443,3 @@ rownames(cell.prop) <- c("CD19+","Naive B cells","Marginal zone B cells","Transi
                          "Plasmablasts","CD21Low","CD19+ counts","IgM-IgD- counts")
 colnames(cell.prop) <- names(Bcells)
 write.csv(cell.prop,paste0(res.path,"/",panel,"_Proportions_",format(Sys.time(), "%Y-%m-%d"), ".csv"))
-
