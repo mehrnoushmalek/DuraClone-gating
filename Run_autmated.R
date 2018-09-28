@@ -1,3 +1,9 @@
+#Author: Mehrnoush Malek
+#Last updated: September 2018
+ 
+
+#Panel, dataset, and type needs to be changed manually to the dataset you wish to analyze.
+#MAke sure all the path corresponds to your local path, where the files and codes are.
 rm(list=ls())
 library(flowCore)
 library(flowDensity)
