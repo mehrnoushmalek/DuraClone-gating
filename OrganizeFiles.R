@@ -1,3 +1,9 @@
+#Author: Mehrnoush Malek
+#Last updated: September 2018
+
+#This code needs to be run before the automated analysis, and after file download,
+# to move the files in proper folders and formatting
+
 library(readr)
 flowrepos.path<-"/mnt/f/FCS data/OneStudy/flowRepository/"
 desired.path<-"/mnt/data/FRepos-Test/"
