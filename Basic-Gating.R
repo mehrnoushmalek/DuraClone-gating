@@ -1,8 +1,6 @@
 #Panel 1
 #Author: Mehrnoush Malek
-#Date: Last revised in July 2018
-
-
+#Date: Last revised in September 2018
 
 
 
