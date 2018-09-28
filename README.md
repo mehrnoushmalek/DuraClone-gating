@@ -10,4 +10,4 @@ The automated pipeline is based on flowDensity automated gating, and the manual 
 The automated pipeline is based on different datasets and also cytometer.
 To run the pipeline, only Run_automated.R needs to be modified and run.
 Before running the code, make sure path are updated to correspond to a right folder in your directory. 
-Centre, panel and type of source needs to be set.
+dataset, type and panel need to be set.
