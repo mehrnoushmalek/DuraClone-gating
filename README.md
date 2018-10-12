@@ -13,4 +13,6 @@ The automated pipeline is based on different datasets and also cytometer.
 To run the pipeline, only Run_automated.R needs to be modified and run.
 Before running the code, make sure path are updated to correspond to a right folder in your directory ( i.e., input.path, res.path, and path of sourced codes). 
 dataset, type and panel need to be set.
+
+
 Look for "###This needs to be modified" within the R codes to update the paths, so that they correspod to correct paths in your local directory.
