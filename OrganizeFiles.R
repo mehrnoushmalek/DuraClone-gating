@@ -5,9 +5,12 @@
 # to move the files in proper folders and formatting
 
 library(readr)
+###This needs to be modified
 flowrepos.path<-"!/flowRepositoryExperimentDownloaded/"
+###This needs to be modified
 desired.path<-"~/PathToSaveFilesintoFolders"
 #This csv files is insdie the flowRepository Experiment
+###This needs to be modified
 meta.data<- read.csv("~PathTo/MetaData for FlowRepository uploads.csv")
 unique(meta.data$Folder)
 grbg<- sapply(unique(meta.data$Folder),function(x){
