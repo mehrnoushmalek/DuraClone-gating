@@ -9,7 +9,8 @@ library(flowCore)
 library(flowDensity)
 library(tcltk)
 #library(pryr)
-source('~/Project-SVN/OneStudy/HelperFunctions.R', echo=F)
+###This needs to be modified
+source('~/PathToDuraClone-gatingFiles/HelperFunctions.R', echo=F)
 
 #Choose which panel, type and centre should be analyzed
 panel <- c("Basic","B cell")[1]
@@ -19,9 +20,11 @@ dataset <-c("whole blood","Fortessa vs. Navios")[2]
 type <-c("healthy volunteer","post HSCT","Navios","Fortessa")[3]
 
 #change this to directory where all the files are
+###This needs to be modified
 dir.path <- "~/PathToFlowRepositoryDownloadedFolder"
 #Change this to a directory where you want the files to be saved. This would be the parent folder.
-#Te analysis for each data set will be saved under their own name in this folder
+#Te analysis for each data set will be saved under their own name in this folder.
+###This needs to be modified
 output.path <- "~/PathToSaveTheResults"
 #Files are in Bioinformatics folder
 path <- paste(dir.path,dataset,"sample",type,sep="/")
