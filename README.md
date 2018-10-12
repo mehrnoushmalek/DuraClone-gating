@@ -8,6 +8,7 @@ Make sure the metadata is downloaded from flowRepository, as it is needed for th
 
 The automated pipeline is based on flowDensity automated gating, and the manual gating strategy. For a detailed information check the manuscript. The latest version of flowDensity can be downloaded from devel branch of BioConductor, here:
 https://master.bioconductor.org/packages/devel/bioc/html/flowDensity.html.
+
 The automated pipeline is based on different datasets and also cytometer.
 To run the pipeline, only Run_automated.R needs to be modified and run.
 Before running the code, make sure path are updated to correspond to a right folder in your directory ( i.e., input.path, res.path, and path of sourced codes). 
