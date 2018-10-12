@@ -1,5 +1,5 @@
 #Author: Mehrnoush Malek
-#Last updated: September 2018
+#Last updated: October 2018
  
 
 #Panel, dataset, and type needs to be changed manually to the dataset you wish to analyze.
@@ -19,9 +19,10 @@ dataset <-c("whole blood","Fortessa vs. Navios")[2]
 type <-c("healthy volunteer","post HSCT","Navios","Fortessa")[3]
 
 #change this to directory where all the files are
-dir.path <- "/mnt/data/FRepos-Test/"
-#Change this to a directory where you want the files to be saved
-output.path <- "/mnt/data/One-Study/"
+dir.path <- "~/PathToFlowRepositoryDownloadedFolder"
+#Change this to a directory where you want the files to be saved. This would be the parent folder.
+#Te analysis for each data set will be saved under their own name in this folder
+output.path <- "~/PathToSaveTheResults"
 #Files are in Bioinformatics folder
 path <- paste(dir.path,dataset,"sample",type,sep="/")
 
@@ -29,8 +30,10 @@ dir.create(paste(output.path,dataset,"Results",type,sep="/"),recursive=T)
 res.path <- paste(output.path,dataset,"Results",type,sep="/")
 #path to FCS files
 filenames<- list.files(path,pattern=".LMD|.fcs",recursive = T)
-meta.data<- read.csv("/mnt/data/One-Study/MetaData for FlowRepository uploads.csv")
+#This is the metadata in flowRepository Experiment
+meta.data<- read.csv("~/MetaData for FlowRepository uploads.csv")
 sub.inds<- which(meta.data$Panel[match(filenames,meta.data$Filename)]==panel)
 fcs.path <- list.files(path,full.names=T,pattern=".LMD|.fcs",recursive = T)[sub.inds]
-source(paste0("~/Project-SVN/OneStudy/",panel, "-Gating.R"))
+#Make sure all codes are within the same folder, otheriwise proper calling is needed.
+source(paste0("~/PathToDuraClone-gating/",panel, "-Gating.R"))
 
