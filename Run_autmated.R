@@ -34,9 +34,11 @@ res.path <- paste(output.path,dataset,"Results",type,sep="/")
 #path to FCS files
 filenames<- list.files(path,pattern=".LMD|.fcs",recursive = T)
 #This is the metadata in flowRepository Experiment
+###This needs to be modified
 meta.data<- read.csv("~/MetaData for FlowRepository uploads.csv")
 sub.inds<- which(meta.data$Panel[match(filenames,meta.data$Filename)]==panel)
 fcs.path <- list.files(path,full.names=T,pattern=".LMD|.fcs",recursive = T)[sub.inds]
 #Make sure all codes are within the same folder, otheriwise proper calling is needed.
+###This needs to be modified
 source(paste0("~/PathToDuraClone-gating/",panel, "-Gating.R"))
 
