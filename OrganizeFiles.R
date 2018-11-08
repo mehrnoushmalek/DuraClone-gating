@@ -1,9 +1,9 @@
 #Author: Mehrnoush Malek
 #Last updated: October 2018
 
+
 #This code needs to be run before the automated analysis, and after file download,
 # to move the files in proper folders and formatting
-
 library(readr)
 ###This needs to be modified
 flowrepos.path<-"!/flowRepositoryExperimentDownloaded/"

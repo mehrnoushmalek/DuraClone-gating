@@ -1,6 +1,6 @@
 # DuraClone-gating
- Automated gating of Basic and Bcell panel of DuraClone. This repository has the automated gating pipeline for 2 of the DuraClone panels.
 
+Automated gating of Basic and Bcell panel of DuraClone. This repository has the automated gating pipeline for 2 of the DuraClone panels.
 
 Files can downloaded through the flowRepository link decribed on the manuscript. Make sure both LMD/FCS files and attachments will be downloaded in a same folder. Everything should be in  EXACTLY 1 folder.
 

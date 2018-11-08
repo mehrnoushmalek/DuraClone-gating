@@ -2,8 +2,6 @@
 #Author: Mehrnoush Malek
 #Date: Last revised in October 2018
 
-
-
 #Read the second dataset in the LMD file as it's not transformed or compensated
 #In here we only keep the markers names from the first data set in order to use it for the second dataset within each FCS file
 #Reading files
